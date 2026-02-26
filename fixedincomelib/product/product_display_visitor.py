@@ -35,7 +35,7 @@ class ProductDisplayVisitor(ProductVisitor):
             ("Notional",         product.notional_),
             ("Long or Short",    product.long_or_short_.to_string().upper()),
             ("Termination Date", product.last_date_.ISO()),
-            ("Payment Date",     product.paymnet_date_.ISO()),  # note: typo in source
+            ("Payment Date",     product.paymnet_date_.ISO()),  
         ]
 
     # ProductFixedAccrued
@@ -50,7 +50,7 @@ class ProductDisplayVisitor(ProductVisitor):
             ("Termination Date",        product.termination_date_.ISO()),
             ("Accrual Basis",           product.accrual_basis_.value_str),
             ("Accrued",                 product.accrued_),
-            ("Payment Date",            product.paymnet_date_.ISO()),  # note: typo in source
+            ("Payment Date",            product.paymnet_date_.ISO()),  
             ("Business Day Convention", product.business_day_convention_.value_str),
             ("Holiday Convention",      product.holiday_convention_.value_str),
         ]
@@ -68,7 +68,7 @@ class ProductDisplayVisitor(ProductVisitor):
             ("Termination Date",   product.termination_date_.ISO()),
             ("Compounding Method", product.compounding_method_.to_string().upper()),
             ("Spread",             product.spread_),
-            ("Payment Date",       product.paymentDate_.ISO()),  # note: camelCase in source
+            ("Payment Date",       product.paymentDate_.ISO()),  
         ]
 
     # ProductRFRSwap
